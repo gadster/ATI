@@ -15,7 +15,7 @@ let test_fixture = "Position" >:::
 					   let mypos = update_market_value mypos 7775 7777 in
 					   (* DO THE CHECKS *)
 					   assert_equal
-					     {action = BOT; ticker = "XOM"; quantity = 0; init_price = 7478; init_commission = 100; market_value = 0; realised_pnl = 12950; unrealised_pnl = 0; buys = 450; sells = 450; avg_bot = 7465; avg_sld = 7495; avg_price = 7469; total_bot = 3359250; total_sld = 3372750; total_commission = 550; cost_basis = 0; net = 0; net_total = 13500; net_incl_comm = 12950}
+					     {action = SLD; ticker = "XOM"; quantity = 0; init_price = 7478; init_commission = 100; market_value = 0; realised_pnl = 12950; unrealised_pnl = 0; buys = 450; sells = 450; avg_bot = 7465; avg_sld = 7495; avg_price = 7469; total_bot = 3359250; total_sld = 3372750; total_commission = 550; cost_basis = 0; net = 0; net_total = 13500; net_incl_comm = 12950}
 					     mypos
 					  );
 		       "round_trip_2" >:: (fun () ->
