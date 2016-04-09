@@ -41,5 +41,9 @@ let test_fixture = "PortfolioAmazonGooglePortfolio" >:::
 		     ]
 		       
 (* Test Runner *)
-let _ = run_test_tt ~verbose:true test_fixture
+let _ = let return_list = run_test_tt ~verbose:true test_fixture in
+	let final_ret_val = List.fold_left (fun ret_val test_result -> match test_result with
+								       | RSuccess _ -> ret_val
+								       | _ -> 1) 0 return_list in
+	exit final_ret_val
 

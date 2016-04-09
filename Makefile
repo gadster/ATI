@@ -12,6 +12,8 @@ all:
 
 test:
 	./position_test.native
+	./portfolio_test.native
+	./portfolioHandler_test.native
 
 clean:
 	$(OCB) -clean
