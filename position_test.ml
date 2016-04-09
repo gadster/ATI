@@ -35,5 +35,5 @@ let test_fixture = "Position" >:::
 					  );
 		     ]
 (* Test Runner *)
-let _ = run_test_tt ~verbose:true test_fixture
+let _ = run_test_tt test_fixture
 
