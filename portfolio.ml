@@ -22,6 +22,9 @@ let create_portfolio cash =
     positions= PositionMap.empty
   }
 
+let get_cur_cash portfolio = 
+  portfolio.cur_cash
+
 (*
         This is called after every position addition or
         modification. It allows the calculations to be

@@ -31,7 +31,7 @@ let test_fixture = "PortfolioHandlerTest" >:::
 			  let handler = PortfolioHandler.convert_fill_to_portfolio_update handler fill_event in
 			  let portfolio = handler.pfolio in
 			  (* DO THE CHECKS *)
-			  assert_equal 49497400 portfolio.cur_cash
+			  assert_equal 49497400 (Portfolio.get_cur_cash portfolio)
 			 );
 		       "OnSignal" >::
 			 (fun () ->
